@@ -1,0 +1,42 @@
+{% extends "BetterDreamWebBundle::layout.html.twig" %}
+
+{% macro app_thumbnail(type) %}
+<div class="thumbnail">
+    <img src="http://placehold.it/560x250" width="560" height="250" alt="{{ (type ~ ".screenshot.alt")|trans }}">
+    <div class="caption">
+        <h2>{{ (type ~ ".title")|trans }}</h2>
+        <p>
+            {{ (type ~ ".description")|trans|nl2br }}
+        </p>
+        <p>
+            <a class="btn btn-primary btn-large" href="{{ (type ~ ".link.uri")|trans }}">
+                <i class="icon-download-alt icon-white"></i>
+                {{ (type ~ ".link.label")|trans }}
+            </a>
+        </p>
+    </div>
+</div>
+{% endmacro %}
+
+{% block page_header %}
+<div class="hero-unit">
+    <h1>{% trans %}title{% endtrans %}</h1>
+    <p>{{ "description"|trans|nl2br }}</p>
+    <p>
+        <a class="btn" href="{{ path("betterdream_web_main_about") }}">
+            {% trans %}titles.about{% endtrans %}
+        </a>
+    </p>
+</div>
+{% endblock page_header %}
+
+{% block content %}
+<div class="row">
+    <div class="span6">
+        {{ _self.app_thumbnail("ios") }}
+    </div>
+    <div class="span6">
+        {{ _self.app_thumbnail("android") }}
+    </div>
+</div>
+{% endblock content %}

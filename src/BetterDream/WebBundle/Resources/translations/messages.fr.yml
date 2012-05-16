@@ -1,0 +1,31 @@
+uri:
+    adrienbrault: http://adrienbrault.fr
+    self:
+        facebook: https://www.facebook.com/BetterDreamOrg
+        twitter: https://twitter.com/BetterDreamOrg
+title: Better Dreams
+titles:
+    about: A Propos
+    contact: Contact
+    help: Aide
+    home: Accueil
+description: |
+    Better Dreams est une application mobile vous permettant de choisir les rêve que vous allez faire en dormant.
+ios:
+    link:
+        uri: http://itunes.apple.com/fr/app/angry-birds-space/id499511971?mt=8
+        label: Télécharger sur l'App Store
+    screenshot:
+        alt: Capture d'écran de l'application iOS Better Dreams
+    title: Disponible sur iOS
+    description: |
+        Description ios
+android:
+    link:
+        uri: https://play.google.com/store/apps/details?id=com.rovio.angrybirdsspace.premium
+        label: Télécharger sur Google Play
+    screenshot:
+        alt: Capture d'écran de l'application Android Better Dreams
+    title: Disponible sur Android
+    description: |
+        Description android

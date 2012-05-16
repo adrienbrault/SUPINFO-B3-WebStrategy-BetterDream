@@ -1,0 +1,25 @@
+title: Better Dreams
+titles:
+    about: About
+    contact: Contact
+    help: Help
+    home: Home
+description: |
+    Better Dreams is a mobile application that let you choose the kind of dreams you'll have while sleeping.
+ios:
+    link:
+        uri: http://itunes.apple.com/us/app/angry-birds-space/id499511971?mt=8
+        label: Download on the App Store
+    screenshot:
+        alt: Better Dreams iOS App Screenshot
+    title: Available on iOS
+    description: |
+        Description ios
+android:
+    link:
+        label: Download on Google Play
+    screenshot:
+        alt: Better Dreams Android App Screenshot
+    title: Available on Android
+    description: |
+        Description android

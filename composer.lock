@@ -1,5 +1,5 @@
 {
-    "hash": "60f09c83d9f0891b51ac51941970dcd5",
+    "hash": "b835fbf719e268984cb2d13fea6e78c4",
     "packages": [
         {
             "package": "doctrine/common",
@@ -12,7 +12,7 @@
         {
             "package": "doctrine/doctrine-bundle",
             "version": "dev-master",
-            "source-reference": "9c8cdd383be8d8a9fd8113289cd36e3453c81e1c"
+            "source-reference": "b45dae9448c1c66fdf1d952394bb88f234dfee13"
         },
         {
             "package": "doctrine/orm",
@@ -32,6 +32,11 @@
             "version": "1.0.1"
         },
         {
+            "package": "jms/i18n-routing-bundle",
+            "version": "dev-master",
+            "source-reference": "6578eea8fd5819e6016aec21a50f995aa69c104a"
+        },
+        {
             "package": "jms/metadata",
             "version": "1.1.1"
         },
@@ -40,9 +45,26 @@
             "version": "1.1.0"
         },
         {
-            "package": "kriswallsmith/assetic",
+            "package": "jms/translation-bundle",
             "version": "dev-master",
-            "source-reference": "1a1b5f963db158a1065343fab617d25ce351a2dc"
+            "source-reference": "a08ff9d59917363d8efc39ba2a21f5bf458b18b3"
+        },
+        {
+            "package": "knplabs/knp-menu",
+            "version": "dev-master",
+            "source-reference": "724511a46a0b8978986ff2b2bfa8712fba3f5bbb"
+        },
+        {
+            "package": "knplabs/knp-menu",
+            "version": "dev-master",
+            "source-reference": "724511a46a0b8978986ff2b2bfa8712fba3f5bbb",
+            "alias-pretty-version": "1.1.x-dev",
+            "alias-version": "1.1.9999999.9999999-dev"
+        },
+        {
+            "package": "knplabs/knp-menu-bundle",
+            "version": "dev-master",
+            "source-reference": "f3a73c821ee1eea8326e1a46dc3316bb62be55f9"
         },
         {
             "package": "kriswallsmith/assetic",
@@ -52,8 +74,27 @@
             "alias-version": "1.1.9999999.9999999-dev"
         },
         {
+            "package": "kriswallsmith/assetic",
+            "version": "dev-master",
+            "source-reference": "1a1b5f963db158a1065343fab617d25ce351a2dc"
+        },
+        {
             "package": "monolog/monolog",
             "version": "1.1.0"
+        },
+        {
+            "package": "mopa/bootstrap-bundle",
+            "version": "dev-master",
+            "source-reference": "4384ab0e30a7b07a18ffd801d6c5295bef0cb750"
+        },
+        {
+            "package": "mopa/composer-bridge",
+            "version": "dev-master",
+            "source-reference": "7f19e052d5aef46a5c3ad58fd6f323f5a95895c2"
+        },
+        {
+            "package": "nikic/php-parser",
+            "version": "v0.9.1"
         },
         {
             "package": "sensio/distribution-bundle",
@@ -68,7 +109,7 @@
         {
             "package": "sensio/generator-bundle",
             "version": "dev-master",
-            "source-reference": "d570af6edd06f546f4f301300396c543aedc7f26"
+            "source-reference": "423f505811307185eeea38a0a396bede32713497"
         },
         {
             "package": "swiftmailer/swiftmailer",
@@ -95,14 +136,14 @@
         {
             "package": "symfony/swiftmailer-bridge",
             "version": "dev-master",
-            "source-reference": "463536de4b149e1560bd764582cbf50dc9936ebd",
+            "source-reference": "509901cb13f43a6319a55804f787d206aa649ab4",
             "alias-pretty-version": "2.1.x-dev",
             "alias-version": "2.1.9999999.9999999-dev"
         },
         {
             "package": "symfony/swiftmailer-bridge",
             "version": "dev-master",
-            "source-reference": "463536de4b149e1560bd764582cbf50dc9936ebd"
+            "source-reference": "509901cb13f43a6319a55804f787d206aa649ab4"
         },
         {
             "package": "symfony/swiftmailer-bundle",
@@ -112,12 +153,19 @@
         {
             "package": "symfony/symfony",
             "version": "dev-master",
-            "source-reference": "f9aa6f7d1e8ec4298db7572dfc3c8aa32201043b"
+            "source-reference": "58b6ef2371bf49612a4be82e91e66c3d0b38a220",
+            "alias-pretty-version": "2.1.x-dev",
+            "alias-version": "2.1.9999999.9999999-dev"
         },
         {
             "package": "symfony/symfony",
             "version": "dev-master",
-            "source-reference": "f9aa6f7d1e8ec4298db7572dfc3c8aa32201043b",
+            "source-reference": "58b6ef2371bf49612a4be82e91e66c3d0b38a220"
+        },
+        {
+            "package": "symfony/symfony",
+            "version": "dev-master",
+            "source-reference": "41621e42e9c0ae0745ef3b75c3b589eada2b0385",
             "alias-pretty-version": "2.1.x-dev",
             "alias-version": "2.1.9999999.9999999-dev"
         },
@@ -129,18 +177,37 @@
         {
             "package": "twig/twig",
             "version": "dev-master",
-            "source-reference": "078905ed9507808b260d34fd8928e79e3a600d1d"
+            "source-reference": "d661c2a2f654ba8f2bddeeac0b8a80dcd59649ab",
+            "alias-pretty-version": "1.9.x-dev",
+            "alias-version": "1.9.9999999.9999999-dev"
         },
         {
             "package": "twig/twig",
             "version": "dev-master",
-            "source-reference": "078905ed9507808b260d34fd8928e79e3a600d1d",
-            "alias-pretty-version": "1.9.x-dev",
-            "alias-version": "1.9.9999999.9999999-dev"
+            "source-reference": "d661c2a2f654ba8f2bddeeac0b8a80dcd59649ab"
+        },
+        {
+            "package": "twitter/bootstrap",
+            "version": "v2.0.3"
         }
     ],
     "packages-dev": null,
     "aliases": [
 
-    ]
+    ],
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "doctrine/doctrine-bundle": 20,
+        "twig/extensions": 20,
+        "symfony/assetic-bundle": 20,
+        "symfony/swiftmailer-bundle": 20,
+        "symfony/monolog-bundle": 20,
+        "sensio/distribution-bundle": 20,
+        "sensio/framework-extra-bundle": 20,
+        "sensio/generator-bundle": 20,
+        "mopa/bootstrap-bundle": 20,
+        "knplabs/knp-menu-bundle": 20,
+        "jms/translation-bundle": 20,
+        "jms/i18n-routing-bundle": 20
+    }
 }

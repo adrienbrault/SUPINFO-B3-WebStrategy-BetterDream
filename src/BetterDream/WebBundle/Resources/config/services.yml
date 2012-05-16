@@ -1,0 +1,32 @@
+services:
+    better_dream.web.navbar:
+        class: %mopa_bootstrap.navbar.generic%
+        arguments:
+            # first argument: a named array of menues:
+            - { leftmenu: @better_dream.web.navbar_main_menu=, rightmenu: null }
+            # second argument: a named array of FormType Classes
+            - {}
+            # third argument: a named array of options
+            -
+                title: "Better Dreams"
+                titleRoute: "betterdream_web_main_index"
+                fixedTop: true
+                isFluid: false
+                template: "MopaBootstrapBundle:Navbar:navbar.html.twig"
+        tags:
+            # The alias is used to retrieve the navbar in templates
+            - { name: mopa_bootstrap.navbar, alias: frontendNavbar }
+
+    better_dream.web.navbar_menu_builder:
+        class: BetterDream\WebBundle\Menu\NavbarMenuBuilder
+        scope: request
+        arguments: [ @knp_menu.factory, @translator ]
+
+    better_dream.web.navbar_main_menu:
+        class: Knp\Menu\MenuItem
+        factory_service: better_dream.web.navbar_menu_builder
+        factory_method: createMainMenu
+        arguments: [ @request ]
+        scope: request
+        tags:
+            - { name: knp_menu.menu, alias: main }
