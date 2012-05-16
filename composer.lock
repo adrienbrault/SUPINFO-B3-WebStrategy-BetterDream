@@ -1,5 +1,5 @@
 {
-    "hash": "b835fbf719e268984cb2d13fea6e78c4",
+    "hash": "362aa354404f4dcc989e08cbe521f013",
     "packages": [
         {
             "package": "doctrine/common",
@@ -52,19 +52,19 @@
         {
             "package": "knplabs/knp-menu",
             "version": "dev-master",
-            "source-reference": "724511a46a0b8978986ff2b2bfa8712fba3f5bbb"
-        },
-        {
-            "package": "knplabs/knp-menu",
-            "version": "dev-master",
             "source-reference": "724511a46a0b8978986ff2b2bfa8712fba3f5bbb",
             "alias-pretty-version": "1.1.x-dev",
             "alias-version": "1.1.9999999.9999999-dev"
         },
         {
+            "package": "knplabs/knp-menu",
+            "version": "dev-master",
+            "source-reference": "724511a46a0b8978986ff2b2bfa8712fba3f5bbb"
+        },
+        {
             "package": "knplabs/knp-menu-bundle",
             "version": "dev-master",
-            "source-reference": "f3a73c821ee1eea8326e1a46dc3316bb62be55f9"
+            "source-reference": "b56e31bc973a3dcec7ce572bfa036b2deaa98010"
         },
         {
             "package": "kriswallsmith/assetic",
@@ -85,7 +85,7 @@
         {
             "package": "mopa/bootstrap-bundle",
             "version": "dev-master",
-            "source-reference": "4384ab0e30a7b07a18ffd801d6c5295bef0cb750"
+            "source-reference": "eae0d6126fa63a81e00c362d7560d2ec91bd6f68"
         },
         {
             "package": "mopa/composer-bridge",
@@ -114,14 +114,14 @@
         {
             "package": "swiftmailer/swiftmailer",
             "version": "dev-master",
-            "source-reference": "57789082d1d53529dcf8cd3ca132d9787a59afee",
-            "alias-pretty-version": "4.1.x-dev",
-            "alias-version": "4.1.9999999.9999999-dev"
+            "source-reference": "57789082d1d53529dcf8cd3ca132d9787a59afee"
         },
         {
             "package": "swiftmailer/swiftmailer",
             "version": "dev-master",
-            "source-reference": "57789082d1d53529dcf8cd3ca132d9787a59afee"
+            "source-reference": "57789082d1d53529dcf8cd3ca132d9787a59afee",
+            "alias-pretty-version": "4.1.x-dev",
+            "alias-version": "4.1.9999999.9999999-dev"
         },
         {
             "package": "symfony/assetic-bundle",
@@ -153,19 +153,12 @@
         {
             "package": "symfony/symfony",
             "version": "dev-master",
-            "source-reference": "58b6ef2371bf49612a4be82e91e66c3d0b38a220",
-            "alias-pretty-version": "2.1.x-dev",
-            "alias-version": "2.1.9999999.9999999-dev"
+            "source-reference": "5314836d3ce70a489143fd846933798f424946b5"
         },
         {
             "package": "symfony/symfony",
             "version": "dev-master",
-            "source-reference": "58b6ef2371bf49612a4be82e91e66c3d0b38a220"
-        },
-        {
-            "package": "symfony/symfony",
-            "version": "dev-master",
-            "source-reference": "41621e42e9c0ae0745ef3b75c3b589eada2b0385",
+            "source-reference": "5314836d3ce70a489143fd846933798f424946b5",
             "alias-pretty-version": "2.1.x-dev",
             "alias-version": "2.1.9999999.9999999-dev"
         },
@@ -177,14 +170,14 @@
         {
             "package": "twig/twig",
             "version": "dev-master",
-            "source-reference": "d661c2a2f654ba8f2bddeeac0b8a80dcd59649ab",
-            "alias-pretty-version": "1.9.x-dev",
-            "alias-version": "1.9.9999999.9999999-dev"
+            "source-reference": "7f06c12c53aa81a1058175fbc5c03e729c1a9b20"
         },
         {
             "package": "twig/twig",
             "version": "dev-master",
-            "source-reference": "d661c2a2f654ba8f2bddeeac0b8a80dcd59649ab"
+            "source-reference": "7f06c12c53aa81a1058175fbc5c03e729c1a9b20",
+            "alias-pretty-version": "1.8.x-dev",
+            "alias-version": "1.8.9999999.9999999-dev"
         },
         {
             "package": "twitter/bootstrap",

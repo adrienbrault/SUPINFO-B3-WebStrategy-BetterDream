@@ -40,6 +40,10 @@
                     "type": "zip"
                 }
             }
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/adrienbrault/KnpMenuBundle"
         }
     ],
     "scripts": {
