@@ -1,5 +1,5 @@
 {
-    "hash": "362aa354404f4dcc989e08cbe521f013",
+    "hash": "cbb267a99b807a0691b1993db92c437f",
     "packages": [
         {
             "package": "doctrine/common",
@@ -136,14 +136,14 @@
         {
             "package": "symfony/swiftmailer-bridge",
             "version": "dev-master",
-            "source-reference": "509901cb13f43a6319a55804f787d206aa649ab4",
-            "alias-pretty-version": "2.1.x-dev",
-            "alias-version": "2.1.9999999.9999999-dev"
+            "source-reference": "509901cb13f43a6319a55804f787d206aa649ab4"
         },
         {
             "package": "symfony/swiftmailer-bridge",
             "version": "dev-master",
-            "source-reference": "509901cb13f43a6319a55804f787d206aa649ab4"
+            "source-reference": "509901cb13f43a6319a55804f787d206aa649ab4",
+            "alias-pretty-version": "2.1.x-dev",
+            "alias-version": "2.1.9999999.9999999-dev"
         },
         {
             "package": "symfony/swiftmailer-bundle",
@@ -170,18 +170,19 @@
         {
             "package": "twig/twig",
             "version": "dev-master",
-            "source-reference": "7f06c12c53aa81a1058175fbc5c03e729c1a9b20"
-        },
-        {
-            "package": "twig/twig",
-            "version": "dev-master",
             "source-reference": "7f06c12c53aa81a1058175fbc5c03e729c1a9b20",
             "alias-pretty-version": "1.8.x-dev",
             "alias-version": "1.8.9999999.9999999-dev"
         },
         {
+            "package": "twig/twig",
+            "version": "dev-master",
+            "source-reference": "7f06c12c53aa81a1058175fbc5c03e729c1a9b20"
+        },
+        {
             "package": "twitter/bootstrap",
-            "version": "v2.0.3"
+            "version": "dev-master",
+            "source-reference": "master"
         }
     ],
     "packages-dev": null,
@@ -199,6 +200,7 @@
         "sensio/framework-extra-bundle": 20,
         "sensio/generator-bundle": 20,
         "mopa/bootstrap-bundle": 20,
+        "twitter/bootstrap": 20,
         "knplabs/knp-menu-bundle": 20,
         "jms/translation-bundle": 20,
         "jms/i18n-routing-bundle": 20

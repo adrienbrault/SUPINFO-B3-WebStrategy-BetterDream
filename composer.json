@@ -19,7 +19,7 @@
         "jms/security-extra-bundle": "1.1.*",
         "jms/di-extra-bundle": "1.0.*",
         "mopa/bootstrap-bundle": "dev-master",
-        "twitter/bootstrap": "v2.0.3",
+        "twitter/bootstrap": "dev-master",
         "knplabs/knp-menu-bundle": "dev-master",
         "jms/translation-bundle": "dev-master",
         "jms/i18n-routing-bundle": "dev-master"
@@ -28,15 +28,15 @@
         {
             "type": "package",
             "package": {
-                "version": "v2.0.3",
+                "version": "dev-master",
                 "name": "twitter/bootstrap",
                 "source": {
                     "url": "https://github.com/twitter/bootstrap.git",
                     "type": "git",
-                    "reference": "v2.0.3"
+                    "reference": "master"
                 },
                 "dist": {
-                    "url": "https://github.com/twitter/bootstrap/zipball/v2.0.3",
+                    "url": "https://github.com/twitter/bootstrap/zipball/master",
                     "type": "zip"
                 }
             }
