@@ -23,3 +23,7 @@ android:
     title: Available on Android
     description: |
         Description android
+language.choice: Language
+locales:
+    en: English
+    fr: French

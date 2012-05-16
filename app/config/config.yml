@@ -86,5 +86,5 @@ knp_menu: ~
 
 jms_i18n_routing:
     default_locale: %locale%
-    locales: [en, fr]
+    locales: [fr, en]
     strategy: prefix_except_default

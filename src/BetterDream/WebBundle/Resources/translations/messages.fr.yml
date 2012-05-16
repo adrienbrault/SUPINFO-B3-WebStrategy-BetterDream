@@ -29,3 +29,7 @@ android:
     title: Disponible sur Android
     description: |
         Description android
+language.choice: Langue
+locales:
+    en: Anglais
+    fr: Français
