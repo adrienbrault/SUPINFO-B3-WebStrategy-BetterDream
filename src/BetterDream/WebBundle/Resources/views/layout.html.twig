@@ -8,7 +8,7 @@
 {% stylesheets
     '@BetterDreamWebBundle/Resources/public/less/betterdreamweb.less'
 %}
-<link href="{{ asset_url }}" type="text/css" rel="stylesheet" media="screen" />
+<link href="{{ asset(asset_url) }}" type="text/css" rel="stylesheet" media="screen" />
 {% endstylesheets %}
 {% endblock head_style %}
 
@@ -32,7 +32,7 @@
 <script type="text/javascript">
     function downloadJSAtOnload() {
         var element = document.createElement("script");
-        element.src = "{{ asset_url }}";
+        element.src = "{{ asset(asset_url) }}";
         document.body.appendChild(element);
     }
 

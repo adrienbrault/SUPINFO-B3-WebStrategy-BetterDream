@@ -14,7 +14,8 @@ ios:
         alt: Better Dreams iOS App Screenshot
     title: Available on iOS
     description: |
-        Description ios
+        This universal application fit perfectly on any of your iphone, ipod touch and ipad!
+        Take advantage today of apple's new technologies like the retina display resolution.
 android:
     link:
         label: Download on Google Play
@@ -22,8 +23,35 @@ android:
         alt: Better Dreams Android App Screenshot
     title: Available on Android
     description: |
-        Description android
+        Tested and optimized with success on a wide set of android devices, this app is available on the most used mobile operating system.
 language.choice: Language
 locales:
     en: English
     fr: French
+marketing:
+    1:
+        title: Avoid nightmares
+        description: |
+            Nightmares are the worst kind of dream that you can have, but with Better Dreams, you will now have sleep free of nightmares!
+
+            Say no to theses nightmares now!
+    2:
+        title: Soyez plus efficace
+        description: |
+            When you choose the kind of dreams you have, you can fully control your sleep. This result in a deeper and more restful sleep.
+
+            Take advantages of nights that do not spoil your days! You will be more productive than ever.
+    3:
+        title: Highly safe
+        description: |
+            Our laboratories tested every effects the application waves could have on hundreds of rats.
+
+            What did we found ? Rats had no effects but happyness and vitality!
+
+            You can be assured that this also apply to you, human being!
+    4:
+        title: Free $0
+        description: |
+            We're a company that deeply cares of our users' opinions. We listened to our users and we decided to drop the price of the app.
+
+            Better Dreams is now free, and you already can recommend it to your friends!

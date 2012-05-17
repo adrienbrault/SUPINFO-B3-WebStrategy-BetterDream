@@ -10,7 +10,7 @@ titles:
     help: Aide
     home: Accueil
 description: |
-    Better Dreams est une application mobile vous permettant de choisir les rêve que vous allez faire en dormant.
+    Better Dreams est une application mobile vous permettant de choisir le genre de rêves que vous allez faire en dormant.
 ios:
     link:
         uri: http://itunes.apple.com/fr/app/angry-birds-space/id499511971?mt=8
@@ -19,7 +19,8 @@ ios:
         alt: Capture d'écran de l'application iOS Better Dreams
     title: Disponible sur iOS
     description: |
-        Description ios
+        Cette application universelle s'intègre à la fois à votre iphone, ipod touch et ipad.
+        En prenant avantage des dernière technologies de Apple, profitez des hautes définitions retina display.
 android:
     link:
         uri: https://play.google.com/store/apps/details?id=com.rovio.angrybirdsspace.premium
@@ -28,8 +29,33 @@ android:
         alt: Capture d'écran de l'application Android Better Dreams
     title: Disponible sur Android
     description: |
-        Description android
+        Optimisé et testé avec succès sur plus d'une centaine d'appareils android, cette version nous assure que le plus de monde possible puisse profiter de Better Dreams!
 language.choice: Langue
 locales:
     en: Anglais
     fr: Français
+marketing:
+    1:
+        title: Évitez les cauchemars
+        description: |
+            En choisissant le type de rêve que vous ferez en plein sommeil, vous avez une solution simple pour éviter les cauchemars.
+
+            Dites non aux mauvaises nuits!
+    2:
+        title: Soyez plus efficace
+        description: |
+            En choisissant vos rêves, vous augmentez les chances d'avoir un sommeil profond et efficace.
+
+            Vous êtes ainsi au top de votre forme et êtes plus productif au travail!
+    3:
+        title: Totalement sûre
+        description: |
+            Nos laboratoires ont testé les ondes sur plus d'une centaine de rats volontaires pendant plusieurs années.
+
+            Vos rêves sont garantis sans effets secondaires!
+    4:
+        title: Gratuit 0€
+        description: |
+            Le bien être des utilisateurs de l'application nous a encouragé à baisser le prix à 0€.
+
+            Recommandez l'application à vos amis sans devoir justifier le prix!

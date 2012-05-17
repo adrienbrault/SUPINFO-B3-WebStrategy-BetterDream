@@ -23,20 +23,45 @@
     <h1>{% trans %}title{% endtrans %}</h1>
     <p>{{ "description"|trans|nl2br }}</p>
     <p>
-        <a class="btn" href="{{ path("betterdream_web_main_about") }}">
-            {% trans %}titles.about{% endtrans %}
+        <a class="btn btn-info btn-large" href="#ios">
+            <i class="icon-chevron-right icon-white"></i>
+            {{ "ios.title"|trans }}
+        </a>
+        <a class="btn btn-info btn-large" href="#android">
+            <i class="icon-chevron-right icon-white"></i>
+            {{ "android.title"|trans }}
         </a>
     </p>
 </div>
 {% endblock page_header %}
 
 {% block content %}
-<div class="row">
-    <div class="span6">
-        {{ _self.app_thumbnail("ios") }}
+<div class="marketing">
+    <div class="row">
+        <div class="span3">
+            <h2>{{ "marketing.1.title"|trans }}</h2>
+            <p>{{ "marketing.1.description"|trans|nl2br }}</p>
+        </div>
+        <div class="span3">
+            <h2>{{ "marketing.2.title"|trans }}</h2>
+            <p>{{ "marketing.2.description"|trans|nl2br }}</p>
+        </div>
+        <div class="span3">
+            <h2>{{ "marketing.3.title"|trans }}</h2>
+            <p>{{ "marketing.3.description"|trans|nl2br }}</p>
+        </div>
+        <div class="span3">
+            <h2>{{ "marketing.4.title"|trans }}</h2>
+            <p>{{ "marketing.4.description"|trans|nl2br }}</p>
+        </div>
     </div>
-    <div class="span6">
-        {{ _self.app_thumbnail("android") }}
+    <div class="row">
+        <div class="span6" id="ios">
+            {{ _self.app_thumbnail("ios") }}
+        </div>
+        <div class="span6" id="android">
+            {{ _self.app_thumbnail("android") }}
+        </div>
     </div>
 </div>
 {% endblock content %}
