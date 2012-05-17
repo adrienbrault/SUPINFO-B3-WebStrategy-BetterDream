@@ -2,6 +2,10 @@
 
 {% extends 'MopaBootstrapBundle::base.html.twig' %}
 
+{% macro js_func_async(url) %}
+function downloadJSAtOnload(){var e=document.createElement("script");e.src="{{ url }}";document.body.appendChild(e);}if(window.addEventListener){window.addEventListener("load",downloadJSAtOnload,false);}else if(window.attachEvent){window.attachEvent("onload", downloadJSAtOnload);}else{window.onload=downloadJSAtOnload;}
+{% endmacro %}
+
 {% block title %}{% trans %}title{% endtrans %}{% endblock %}
 
 {% block head_style %}
@@ -29,19 +33,7 @@
     '@MopaBootstrapBundle/Resources/bootstrap/js/bootstrap-typeahead.js'
     '@MopaBootstrapBundle/Resources/public/js/mopabootstrap-collection.js'
 %}
-<script type="text/javascript">
-    function downloadJSAtOnload() {
-        var element = document.createElement("script");
-        element.src = "{{ asset(asset_url) }}";
-        document.body.appendChild(element);
-    }
-
-    if (window.addEventListener)
-        window.addEventListener("load", downloadJSAtOnload, false);
-    else if (window.attachEvent)
-        window.attachEvent("onload", downloadJSAtOnload);
-    else window.onload = downloadJSAtOnload;
-</script>
+<script type="text/javascript">{{ _self.js_func_async(asset(asset_url)) }}</script>
 {% endjavascripts %}
 {% endblock foot_script %}
 
