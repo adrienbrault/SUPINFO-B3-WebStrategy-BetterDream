@@ -3,7 +3,7 @@
 {% from 'MopaBootstrapBundle::flash.html.twig' import session_flash %}
 
 {% macro js_func_async(url) %}function downloadJSAtOnload(){var e=document.createElement("script");e.src="{{ url }}";document.body.appendChild(e);$("body")}if(window.addEventListener){window.addEventListener("load",downloadJSAtOnload,false);}else if(window.attachEvent){window.attachEvent("onload", downloadJSAtOnload);}else{window.onload=downloadJSAtOnload;}{% endmacro %}
-{% macro js_onload(_callback) %}function callback(){setTimeout({{ _callback }}, 0);};if(window.addEventListener){window.addEventListener("load",callback,false);}else if(window.attachEvent){window.attachEvent("onload",callback);}else{window.onload=callback;}{% endmacro %}
+{% macro js_onload(_callback) %}function callback(){setTimeout({{ _callback }}, 500);};if(window.addEventListener){window.addEventListener("load",callback,false);}else if(window.attachEvent){window.attachEvent("onload",callback);}else{window.onload=callback;}{% endmacro %}
 
 <!DOCTYPE html>
 
