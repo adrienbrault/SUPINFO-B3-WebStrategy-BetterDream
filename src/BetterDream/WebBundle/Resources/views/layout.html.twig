@@ -1,20 +1,81 @@
+{% spaceless %}
+
 {% from 'MopaBootstrapBundle::flash.html.twig' import session_flash %}
 
-{% extends 'MopaBootstrapBundle::base.html.twig' %}
+{% macro js_func_async(url) %}function downloadJSAtOnload(){var e=document.createElement("script");e.src="{{ url }}";document.body.appendChild(e);}if(window.addEventListener){window.addEventListener("load",downloadJSAtOnload,false);}else if(window.attachEvent){window.attachEvent("onload", downloadJSAtOnload);}else{window.onload=downloadJSAtOnload;}{% endmacro %}
 
-{% macro js_func_async(url) %}
-function downloadJSAtOnload(){var e=document.createElement("script");e.src="{{ url }}";document.body.appendChild(e);}if(window.addEventListener){window.addEventListener("load",downloadJSAtOnload,false);}else if(window.attachEvent){window.attachEvent("onload", downloadJSAtOnload);}else{window.onload=downloadJSAtOnload;}
-{% endmacro %}
+<!DOCTYPE html>
 
-{% block title %}{% trans %}title{% endtrans %}{% endblock %}
+{% block html_tag %}
+<html>
+{% endblock html_tag %}
+<head>
+    <meta charset="UTF-8" />
+    {% block head_style %}
+    {% stylesheets
+        '@BetterDreamWebBundle/Resources/public/less/betterdreamweb.less'
+    %}
+    <link href="{{ asset(asset_url) }}" type="text/css" rel="stylesheet" media="screen" />
+    {% endstylesheets %}
+    {% endblock head_style %}
 
-{% block head_style %}
-{% stylesheets
-    '@BetterDreamWebBundle/Resources/public/less/betterdreamweb.less'
-%}
-<link href="{{ asset(asset_url) }}" type="text/css" rel="stylesheet" media="screen" />
-{% endstylesheets %}
-{% endblock head_style %}
+    {% block head_metas %}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{% block head_metas_description %}{{ "description"|trans|striptags|trim }}{% endblock %}" />
+    {% endblock head_metas %}
+
+    {% block head_script %}
+    {# Overwrite this block to add your own js here, to get them generated into final files #}
+    {% endblock head_script %}
+
+    <title>{% block title %}{% trans %}title{% endtrans %}{% endblock %}</title>
+    <link rel="shortcut icon" href="{{ asset('favicon.ico') }}" />
+
+    {% block head_link_alternate %}
+    {% for locale in locales %}
+        {% if locale != app.request.locale %}
+            {% set link_alternate = url(app.request.attributes.get("_route"), {"_locale": locale}) %}
+            <link rel="alternate" hreflang="{{ locale }}" href="{{ link_alternate }}" />
+        {% endif %}
+    {% endfor %}
+    {% endblock head_link_alternate %}
+</head>
+{% block body_tag %}
+<body data-spy="scroll">
+{% endblock body_tag %}
+{% block body_start %}
+{% endblock body_start %}
+
+{% block body %}
+{% block navbar %}
+{{ mopa_bootstrap_navbar('frontendNavbar') }}
+{% endblock navbar %}
+
+{% block container %}
+<div class="container">
+    <div class="content">
+        {% block page_header %}
+        <div class="page-header">
+            <h1>{% block headline %}{% trans %}title{% endtrans %}{% endblock headline %}</h1>
+        </div>
+        {% endblock page_header %}
+
+        {% block flashes %}
+        {{ session_flash() }}
+        {% endblock flashes %}
+
+        {% block content %}
+        <strong>Better Dreams !!!</strong>
+        {% endblock content %}
+    </div>
+    <hr>
+    <footer>
+        {% block footer %}
+        <p>&copy; <a href="{% trans %}uri.adrienbrault{% endtrans %}" target="_blank">Adrien Brault</a> 2012</p>
+        {% endblock footer %}
+    </footer>
+</div>
+{% endblock container %}
 
 {% block foot_script %}
 {%- javascripts
@@ -47,33 +108,8 @@ function downloadJSAtOnload(){var e=document.createElement("script");e.src="{{ u
     })();
 </script>
 {% endblock foot_script %}
+{% endblock body %}
+</body>
+</html>
 
-{% block navbar %}
-{{ mopa_bootstrap_navbar('frontendNavbar') }}
-{% endblock navbar %}
-
-{% block container %}
-<div class="container">
-    <div class="content">
-        {% block page_header %}
-        <div class="page-header">
-            <h1>{% block headline %}{% trans %}title{% endtrans %}{% endblock headline %}</h1>
-        </div>
-        {% endblock page_header %}
-
-        {% block flashes %}
-        {{ session_flash() }}
-        {% endblock flashes %}
-
-        {% block content %}
-            <strong>Better Dreams !!!</strong>
-        {% endblock content %}
-    </div>
-    <hr>
-    <footer>
-        {% block footer %}
-        <p>&copy; <a href="{% trans %}uri.adrienbrault{% endtrans %}" target="_blank">Adrien Brault</a> 2012</p>
-        {% endblock footer %}
-    </footer>
-</div>
-{% endblock container %}
+{% endspaceless %}

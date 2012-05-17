@@ -32,6 +32,8 @@ twig:
     form:
         resources:
             - "MopaBootstrapBundle:Form:fields.html.twig"
+    globals:
+        locales: %locales%
 
 # Assetic Configuration
 assetic:
@@ -88,5 +90,5 @@ knp_menu: ~
 
 jms_i18n_routing:
     default_locale: %locale%
-    locales: [fr, en]
+    locales: %locales%
     strategy: prefix_except_default

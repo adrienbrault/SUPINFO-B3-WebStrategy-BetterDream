@@ -12,6 +12,7 @@ parameters:
     mailer_password:   ~
 
     locale:            fr
+    locales:           [fr, en]
     secret:            ThisTokenIsNotSoSecretChangeIt
 
     knp_menu.renderer.twig.options:
