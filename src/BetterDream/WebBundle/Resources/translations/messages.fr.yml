@@ -9,6 +9,7 @@ titles:
     contact: Contact
     help: Aide
     home: Accueil
+    social: Réseaux sociaux
 description: |
     Better Dreams est une application mobile vous permettant de <strong>choisir le genre de rêves que vous ferez</strong> en dormant.
 ios:
@@ -90,3 +91,10 @@ about:
         Comme tous mes projets d'école, ce site sera distribué en open source une fois la date maximum de rendu dépassée.
 facebook:
     locale: fr_FR
+social:
+    facebook:
+        label: Facebook
+        uri: https://www.facebook.com/BetterDreamOrg
+    twitter:
+        label: Twitter
+        uri: https://twitter.com/BetterDreamOrg

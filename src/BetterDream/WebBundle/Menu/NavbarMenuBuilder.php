@@ -42,14 +42,35 @@ class NavbarMenuBuilder extends AbstractNavbarMenuBuilder
      */
     public function createMainMenu(Request $request)
     {
+        $getIconHtml = function($type) {
+            return sprintf('<i class="icon-%s icon-white"></i> ', $type);
+        };
+
         $menu = $this->factory->createItem('root');
         $menu->setCurrentUri($request->getRequestUri());
         $menu->setChildrenAttribute('class', 'nav');
+        $menu->setExtra('safe_label', true);
 
-        $menu->addChild($this->translator->trans('titles.home'), array('route' => 'betterdream_web_main_index'));
-        $menu->addChild($this->translator->trans('titles.help'), array('route' => 'betterdream_web_main_help'));
-        $menu->addChild($this->translator->trans('titles.contact'), array('route' => 'betterdream_web_main_contact'));
-        $menu->addChild($this->translator->trans('titles.about'), array('route' => 'betterdream_web_main_about'));
+        $menu->addChild($getIconHtml('home') . $this->translator->trans('titles.home'), array('route' => 'betterdream_web_main_index'));
+        $menu->addChild($getIconHtml('question-sign') . $this->translator->trans('titles.help'), array('route' => 'betterdream_web_main_help'));
+        $menu->addChild($getIconHtml('envelope') . $this->translator->trans('titles.contact'), array('route' => 'betterdream_web_main_contact'));
+        $menu->addChild($getIconHtml('info-sign') . $this->translator->trans('titles.about'), array('route' => 'betterdream_web_main_about'));
+
+        $dropDownLabel = $getIconHtml('thumbs-up') . $this->translator->trans('titles.social') . ' <b class="caret"></b>';
+        $dropDown = $this->createDropdownMenuItem($menu, $dropDownLabel);
+
+        $socialTypes = array('facebook', 'twitter');
+        foreach ($socialTypes as $type) {
+            $url = $this->translator->trans(sprintf('social.%s.uri', $type));
+            $label = $this->translator->trans(sprintf('social.%s.label', $type));
+            $html = sprintf('<a href="%s" target="_blank">%s</a>', $url, $label);
+            $child = $dropDown->addChild($html);
+            $child->setExtra('safe_label', true);
+        }
+
+        foreach ($menu->getChildren() as $child) {
+            $child->setExtra('safe_label', true);
+        }
 
         return $menu;
     }
@@ -62,7 +83,7 @@ class NavbarMenuBuilder extends AbstractNavbarMenuBuilder
         $menu = $this->factory->createItem('root');
         $menu->setChildrenAttribute('class', 'nav pull-right');
 
-        $dropDownLabel = $this->translator->trans('language.choice') . ' <b class="caret"></b>';
+        $dropDownLabel = '<i class="icon-globe icon-white"></i> ' . $this->translator->trans('language.choice') . ' <b class="caret"></b>';
         $dropDown = $this->createDropdownMenuItem($menu, $dropDownLabel);
         $dropDown->setExtra('safe_label', true);
 
