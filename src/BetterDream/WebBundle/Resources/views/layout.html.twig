@@ -77,6 +77,19 @@
     <hr>
     <footer>
         {% block footer %}
+        {% set home_url = url("betterdream_web_main_index", {"_locale": app.request.locale}) %}
+
+        <div class="social">
+            <div>
+                <div class="g-plusone" data-size="medium" data-href="{{ home_url }}"></div>
+            </div>
+            <div>
+                <a href="https://twitter.com/share" data-lang="{{ app.request.locale }}" data-url="{{ home_url }}" class="twitter-share-button" data-via="BetterDreamOrg" data-related="BetterDreamOrg">Tweeter</a>
+            </div>
+            <div>
+                <div class="fb-like" data-href="{{ home_url }}" data-send="false" data-layout="button_count" data-show-faces="false"></div>
+            </div>
+        </div>
         <p>&copy; <a href="{% trans %}uri.adrienbrault{% endtrans %}" target="_blank">Adrien Brault</a> 2012</p>
         {% endblock footer %}
     </footer>
@@ -102,16 +115,29 @@
 %}
 <script type="text/javascript">{{ _self.js_func_async(asset(asset_url)) }}</script>
 {% endjavascripts %}
-<script type="text/javascript">
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-31836368-1']);
-    _gaq.push(['_trackPageview']);
 
-    (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
+{# Google analytics #}
+<script type="text/javascript">var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-31836368-1']);
+_gaq.push(['_trackPageview']);
+(function(){var b=document.createElement("script");b.type="text/javascript";b.async=true;b.src=("https:"==document.location.protocol?"https://ssl":"http://www")+".google-analytics.com/ga.js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(b,a)})();
+</script>
+
+{# Google+ #}
+<script type="text/javascript">window.___gcfg = {lang: '{{ app.request.locale }}'};
+(function(){var a=document.createElement("script");a.type="text/javascript";a.async=true;a.src="https://apis.google.com/js/plusone.js";var b=document.getElementsByTagName("script")[0];b.parentNode.insertBefore(a,b)})();
+</script>
+
+{# Twitter #}
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+{# Facebook #}
+<div id="fb-root"></div>
+<script>window.fbAsyncInit = function() {
+FB.init({
+    xfbml: true
+});
+};(function(c){var b,e="facebook-jssdk",a=c.getElementsByTagName("script")[0];if(c.getElementById(e)){return}b=c.createElement("script");b.id=e;b.async=true;b.src="//connect.facebook.net/{{ "facebook.locale"|trans }}/all.js";a.parentNode.insertBefore(b,a)}(document));
 </script>
 {% endblock foot_script %}
 {% endblock body %}
