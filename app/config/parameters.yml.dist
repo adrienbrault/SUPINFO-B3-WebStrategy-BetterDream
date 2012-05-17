@@ -15,5 +15,8 @@ parameters:
     locales:           [fr, en]
     secret:            ThisTokenIsNotSoSecretChangeIt
 
+    assets_base_urls:
+        - "http://betterdream.org/"
+
     knp_menu.renderer.twig.options:
         allow_safe_labels: true

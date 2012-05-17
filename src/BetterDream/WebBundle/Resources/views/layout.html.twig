@@ -22,6 +22,11 @@
     {% block head_metas %}
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="{% block head_metas_description %}{{ "description"|trans|striptags|trim }}{% endblock %}" />
+
+    <meta property="og:title" content="{{ block("title") }}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="{{ url(app.request.attributes.get("_route") ) }}" />
+    <meta property="og:image" content="{{ asset("bundles/betterdreamweb/img/icon.jpg") }}" />
     {% endblock head_metas %}
 
     {% block head_script %}
