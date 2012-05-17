@@ -1,3 +1,11 @@
 {% extends "BetterDreamWebBundle::layout.html.twig" %}
 
 {% block title %}{{ parent() }} - {{ "titles.about"|trans }}{% endblock title %}
+
+{% block headline %}{{ "titles.about"|trans }}{% endblock headline %}
+
+{% block content %}
+<p>
+    {{ "about.text"|trans|raw|nl2br }}
+</p>
+{% endblock content %}

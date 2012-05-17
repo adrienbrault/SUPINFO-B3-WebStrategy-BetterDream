@@ -10,7 +10,7 @@ titles:
     help: Aide
     home: Accueil
 description: |
-    Better Dreams est une application mobile vous permettant de choisir le genre de rêves que vous allez faire en dormant.
+    Better Dreams est une application mobile vous permettant de <strong>choisir le genre de rêves que vous ferez</strong> en dormant.
 ios:
     link:
         uri: http://itunes.apple.com/fr/app/angry-birds-space/id499511971?mt=8
@@ -38,24 +38,53 @@ marketing:
     1:
         title: Évitez les cauchemars
         description: |
-            En choisissant le type de rêve que vous ferez en plein sommeil, vous avez une solution simple pour éviter les cauchemars.
+            En choisissant le type de rêve que vous ferez en plein sommeil, vous avez une solution simple pour <strong>éviter les cauchemars</strong>.
 
             Dites non aux mauvaises nuits!
     2:
         title: Soyez plus efficace
         description: |
-            En choisissant vos rêves, vous augmentez les chances d'avoir un sommeil profond et efficace.
+            En choisissant vos rêves, vous augmentez les chances d'avoir un <strong>sommeil profond et efficace</strong>.
 
-            Vous êtes ainsi au top de votre forme et êtes plus productif au travail!
+            Vous êtes ainsi au top de votre forme et êtes <strong>plus productif au travail</strong>!
     3:
         title: Totalement sûre
         description: |
             Nos laboratoires ont testé les ondes sur plus d'une centaine de rats volontaires pendant plusieurs années.
 
-            Vos rêves sont garantis sans effets secondaires!
+            Vos rêves sont garantis <strong>sans effets secondaires</strong>!
     4:
         title: Gratuit 0€
         description: |
-            Le bien être des utilisateurs de l'application nous a encouragé à baisser le prix à 0€.
+            Le bien être des utilisateurs de l'application nous a encouragé à baisser le prix.
+            <strong>Better Dreams est maintenant gratuit!</strong>
 
             Recommandez l'application à vos amis sans devoir justifier le prix!
+help:
+    1:
+        term: Est-ce que Better Dreams peut nuire à ma santé ?
+        definition: |
+            Absolument pas. Nous avons fait testé les effets de l'application sur des centaines de rats par nos laboratoires; les résultats nous ont autant supris qu'ils vous suprendront: chacun des rats est sortis <strong>plus heureux et plus fort</strong> de ces tests.
+    2:
+        term: <strong>Comment utiliser</strong> Better Dreams ?
+        definition: |
+            1. Lancez l'application.
+            2. Choisissez le genre de rêve que vous voulez faire, ou dites à haute voix le rêve que vous souhaitez.
+            3. Frottez votre mobile sur le dessus de votre tête.
+            4. Commencez votre paisible sommeil!
+    3:
+        term: Pourquoi Better Dreams est-elle une <strong>application gratuite</strong> ?
+        definition: |
+            Nos études de satisfaction mené auprès de nos utilisateurs ont conclu que distribuer l'application gratuitement augmenterait le bonheur de nos utilisateurs.
+
+            Nous somme aussi concerné par votre bien être que vous, et nous vous avons écouté en rendant l'application gratuite! Better Dreams est coûte maintenat 0€.
+contact:
+    text: |
+        Nous apportons une très grande importance à votre avis, car nous voulons faire de <strong>Better Dreams</strong> la meilleure application que vous utiliserez!
+
+        N'hésitez pas à nous envoyer vos avis sur l'application, qu'ils soivent positifs ou negatifs, et participez au succès de <strong>Better Dreams</strong>.
+about:
+    text: |
+        Ce site est un projet d'école, nous devons travailler les SEO du site.
+
+        Comme tous mes projets d'école, ce site sera distribué en open source une fois la date maximum de rendu dépassée.

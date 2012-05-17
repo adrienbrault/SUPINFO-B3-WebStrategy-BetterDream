@@ -5,7 +5,7 @@ titles:
     help: Help
     home: Home
 description: |
-    Better Dreams is a mobile application that let you choose the kind of dreams you'll have while sleeping.
+    Better Dreams is a mobile application that let you <strong>choose the kind of dreams</strong> you'll have while sleeping.
 ios:
     link:
         uri: http://itunes.apple.com/us/app/angry-birds-space/id499511971?mt=8
@@ -32,21 +32,21 @@ marketing:
     1:
         title: Avoid nightmares
         description: |
-            Nightmares are the worst kind of dream that you can have, but with Better Dreams, you will now have sleep free of nightmares!
+            Nightmares are the worst kind of dream that you can have, but with Better Dreams, you will now have <strong>sleep free of nightmares</strong>!
 
             Say no to theses nightmares now!
     2:
         title: Soyez plus efficace
         description: |
-            When you choose the kind of dreams you have, you can fully control your sleep. This result in a deeper and more restful sleep.
+            When you choose the kind of dreams you have, <strong>you can fully control your sleep</strong>. This result in a deeper and more restful sleep.
 
-            Take advantages of nights that do not spoil your days! You will be more productive than ever.
+            Take advantages of nights that do not spoil your days! You will be <strong>more productive</strong> than ever.
     3:
         title: Highly safe
         description: |
             Our laboratories tested every effects the application waves could have on hundreds of rats.
 
-            What did we found ? Rats had no effects but happyness and vitality!
+            What did we found ? Rats had <strong>no side effects but happyness and vitality</strong>!
 
             You can be assured that this also apply to you, human being!
     4:
@@ -54,4 +54,32 @@ marketing:
         description: |
             We're a company that deeply cares of our users' opinions. We listened to our users and we decided to drop the price of the app.
 
-            Better Dreams is now free, and you already can recommend it to your friends!
+            <strong>Better Dreams is now free</strong>, and you already can recommend it to your friends!
+help:
+    1:
+        term: Is Better Dreams a threat to my health ?
+        definition: |
+            Absolutly not. Our laboratoties tested the effects of Better Dreams hundreds of rats, and the results were just amazing, every single rat became <strong>happyer and stronger</strong> after the experiment.
+    2:
+        term: <strong>How to use</strong> Better Dreams ?
+        definition: |
+            1. Launch the app.
+            2. Choose the kind of dream you want to have from the list, or describe aloud the dream you want to have.
+            3. Throw you mobile on your bed, and jump two times.
+            4. Have a nice sleep!
+    3:
+        term: Why is Better Dreams a <strong>free app</strong> ?
+        definition: |
+            Our customer satisfaction surveys proved that droping the price would make our users happier.
+
+            We love all our users, so we listened to your opinion and made Better Dreams free. Better Dremas now costs $0.
+contact:
+    text: |
+        We care a lot about your opinion, because we aim to make <strong>Better Dreams</strong> the best app you'll ever experienced.
+
+        Feel free to send any positive or negative thoughts on the app, and make a difference!
+about:
+    text: |
+        This website is a school project. We have to work on SEO.
+
+        Like all my project, this one will be open sourced on my github account once the deadline will be exceeded.

@@ -4,14 +4,14 @@
 <div class="thumbnail">
     <img src="http://placehold.it/560x250" width="560" height="250" alt="{{ (type ~ ".screenshot.alt")|trans }}">
     <div class="caption">
-        <h2>{{ (type ~ ".title")|trans }}</h2>
+        <h2>{{ (type ~ ".title")|trans|raw }}</h2>
         <p>
-            {{ (type ~ ".description")|trans|nl2br }}
+            {{ (type ~ ".description")|trans|raw|nl2br }}
         </p>
         <p>
-            <a class="btn btn-primary btn-large" href="{{ (type ~ ".link.uri")|trans }}">
+            <a class="btn btn-primary btn-large" href="{{ (type ~ ".link.uri")|trans|raw }}">
                 <i class="icon-download-alt icon-white"></i>
-                {{ (type ~ ".link.label")|trans }}
+                {{ (type ~ ".link.label")|trans|raw }}
             </a>
         </p>
     </div>
@@ -21,15 +21,15 @@
 {% block page_header %}
 <div class="hero-unit">
     <h1>{% trans %}title{% endtrans %}</h1>
-    <p>{{ "description"|trans|nl2br }}</p>
+    <p>{{ "description"|trans|raw|nl2br }}</p>
     <p>
         <a class="btn btn-info btn-large" href="#ios">
             <i class="icon-chevron-right icon-white"></i>
-            {{ "ios.title"|trans }}
+            {{ "ios.title"|trans|raw }}
         </a>
         <a class="btn btn-info btn-large" href="#android">
             <i class="icon-chevron-right icon-white"></i>
-            {{ "android.title"|trans }}
+            {{ "android.title"|trans|raw }}
         </a>
     </p>
 </div>
@@ -38,22 +38,12 @@
 {% block content %}
 <div class="marketing">
     <div class="row">
+        {% for i in 1..4 %}
         <div class="span3">
-            <h2>{{ "marketing.1.title"|trans }}</h2>
-            <p>{{ "marketing.1.description"|trans|nl2br }}</p>
+            <h2>{{ ("marketing." ~ i ~ ".title")|trans|raw }}</h2>
+            <p>{{ ("marketing." ~ i ~ ".description")|trans|raw|nl2br }}</p>
         </div>
-        <div class="span3">
-            <h2>{{ "marketing.2.title"|trans }}</h2>
-            <p>{{ "marketing.2.description"|trans|nl2br }}</p>
-        </div>
-        <div class="span3">
-            <h2>{{ "marketing.3.title"|trans }}</h2>
-            <p>{{ "marketing.3.description"|trans|nl2br }}</p>
-        </div>
-        <div class="span3">
-            <h2>{{ "marketing.4.title"|trans }}</h2>
-            <p>{{ "marketing.4.description"|trans|nl2br }}</p>
-        </div>
+        {% endfor %}
     </div>
     <div class="row">
         <div class="span6" id="ios">

@@ -1,3 +1,14 @@
 {% extends "BetterDreamWebBundle::layout.html.twig" %}
 
 {% block title %}{{ parent() }} - {{ "titles.help"|trans }}{% endblock title %}
+
+{% block headline %}{{ "titles.help"|trans }}{% endblock headline %}
+
+{% block content %}
+{% for i in 1..3 %}
+<dl>
+    <dt>{{ ("help." ~ i ~ ".term")|trans|raw }}</dt>
+    <dd>{{ ("help." ~ i ~ ".definition")|trans|raw|nl2br }}</dd>
+</dl>
+{% endfor %}
+{% endblock content %}

@@ -1,3 +1,22 @@
 {% extends "BetterDreamWebBundle::layout.html.twig" %}
 
 {% block title %}{{ parent() }} - {{ "titles.contact"|trans }}{% endblock title %}
+
+{% block headline %}{{ "titles.contact"|trans }}{% endblock headline %}
+
+{% block content %}
+<p>
+    {{ "contact.text"|trans|raw|nl2br }}
+</p>
+<address>
+    <strong>Better Dreams, Inc.</strong><br>
+    45 rue Martin Pictus<br>
+    75001 Paris<br>
+    France
+</address>
+
+<address>
+    <strong>Better Dreams' contact email</strong><br>
+    <a href="mailto:contact@betterdream.org">contact@betterdream.org</a>
+</address>
+{% endblock content %}
