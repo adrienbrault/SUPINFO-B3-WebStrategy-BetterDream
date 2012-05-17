@@ -2,7 +2,8 @@
 
 {% from 'MopaBootstrapBundle::flash.html.twig' import session_flash %}
 
-{% macro js_func_async(url) %}function downloadJSAtOnload(){var e=document.createElement("script");e.src="{{ url }}";document.body.appendChild(e);}if(window.addEventListener){window.addEventListener("load",downloadJSAtOnload,false);}else if(window.attachEvent){window.attachEvent("onload", downloadJSAtOnload);}else{window.onload=downloadJSAtOnload;}{% endmacro %}
+{% macro js_func_async(url) %}function downloadJSAtOnload(){var e=document.createElement("script");e.src="{{ url }}";document.body.appendChild(e);$("body")}if(window.addEventListener){window.addEventListener("load",downloadJSAtOnload,false);}else if(window.attachEvent){window.attachEvent("onload", downloadJSAtOnload);}else{window.onload=downloadJSAtOnload;}{% endmacro %}
+{% macro js_onload(_callback) %}function callback(){setTimeout({{ _callback }}, 0);};if(window.addEventListener){window.addEventListener("load",callback,false);}else if(window.attachEvent){window.attachEvent("onload",callback);}else{window.onload=callback;}{% endmacro %}
 
 <!DOCTYPE html>
 
@@ -124,20 +125,31 @@ _gaq.push(['_trackPageview']);
 </script>
 
 {# Google+ #}
-<script type="text/javascript">window.___gcfg = {lang: '{{ app.request.locale }}'};
+<script type="text/javascript">
+function insertGoogleScript() {
+window.___gcfg = {lang: '{{ app.request.locale }}'};
 (function(){var a=document.createElement("script");a.type="text/javascript";a.async=true;a.src="https://apis.google.com/js/plusone.js";var b=document.getElementsByTagName("script")[0];b.parentNode.insertBefore(a,b)})();
+}
+{{ _self.js_onload("insertGoogleScript") }}
 </script>
 
 {# Twitter #}
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+<script>
+function insertTwitterScript(){!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");}
+{{ _self.js_onload("insertTwitterScript") }}
+</script>
 
 {# Facebook #}
 <div id="fb-root"></div>
-<script>window.fbAsyncInit = function() {
+<script>
+function insertFacebookScript(){
+window.fbAsyncInit = function() {
 FB.init({
     xfbml: true
 });
 };(function(c){var b,e="facebook-jssdk",a=c.getElementsByTagName("script")[0];if(c.getElementById(e)){return}b=c.createElement("script");b.id=e;b.async=true;b.src="//connect.facebook.net/{{ "facebook.locale"|trans }}/all.js";a.parentNode.insertBefore(b,a)}(document));
+}
+{{ _self.js_onload("insertFacebookScript") }}
 </script>
 {% endblock foot_script %}
 {% endblock body %}
