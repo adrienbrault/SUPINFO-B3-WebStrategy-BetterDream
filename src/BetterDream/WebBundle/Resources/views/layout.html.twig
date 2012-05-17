@@ -24,6 +24,7 @@
     <meta name="description" content="{% block head_metas_description %}{{ "description"|trans|striptags|trim }}{% endblock %}" />
 
     <meta property="og:title" content="{{ block("title") }}" />
+    <meta property="og:description" content="{{ block("head_metas_description") }}" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="{{ url(app.request.attributes.get("_route") ) }}" />
     <meta property="og:image" content="{{ asset("bundles/betterdreamweb/img/icon.jpg") }}" />
