@@ -15,7 +15,7 @@
     {% stylesheets
         '@BetterDreamWebBundle/Resources/public/less/betterdreamweb.less'
     %}
-    <link href="{{ asset(asset_url) }}" type="text/css" rel="stylesheet" media="screen" />
+    <link href="{{ asset_url }}" type="text/css" rel="stylesheet" media="screen" />
     {% endstylesheets %}
     {% endblock head_style %}
 
@@ -113,7 +113,7 @@
     '@MopaBootstrapBundle/Resources/bootstrap/js/bootstrap-typeahead.js'
     '@MopaBootstrapBundle/Resources/public/js/mopabootstrap-collection.js'
 %}
-<script type="text/javascript">{{ _self.js_func_async(asset(asset_url)) }}</script>
+<script type="text/javascript">{{ _self.js_func_async(asset_url) }}</script>
 {% endjavascripts %}
 
 {# Google analytics #}
