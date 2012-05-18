@@ -1,5 +1,7 @@
 {% extends "BetterDreamWebBundle::layout.html.twig" %}
 
+{% block title %}{{ parent() }} - {{ "home.title"|trans }}{% endblock title %}
+
 {% macro app_thumbnail(type) %}
 <div class="thumbnail">
     <img src="http://placehold.it/560x250" width="560" height="250" alt="{{ (type ~ ".screenshot.alt")|trans }}">

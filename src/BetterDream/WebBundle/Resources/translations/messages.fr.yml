@@ -10,6 +10,7 @@ titles:
     help: Aide
     home: Accueil
     social: Réseaux sociaux
+home.title: L'application iphone et android pour choisir ses rêves
 description: |
     Better Dreams est une application mobile vous permettant de <strong>choisir le genre de rêves que vous ferez</strong> en dormant.
 ios:
