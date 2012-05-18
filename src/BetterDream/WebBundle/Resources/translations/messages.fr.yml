@@ -10,9 +10,10 @@ titles:
     help: Aide
     home: Accueil
     social: Réseaux sociaux
-home.title: L'application iphone et android pour choisir ses rêves
+    how_to: Comment avoir de meilleurs rêves
+home.title: La meilleure app iphone et android pour choisir ses rêves
 description: |
-    Better Dreams est une application mobile vous permettant de <strong>choisir le genre de rêves que vous ferez</strong> en dormant.
+    Better Dreams est une application mobile android et iphone vous permettant de <strong>choisir le genre de rêves que vous ferez</strong> en dormant.
 ios:
     link:
         uri: http://itunes.apple.com/fr/app/angry-birds-space/id499511971?mt=8
@@ -99,3 +100,45 @@ social:
     twitter:
         label: Twitter
         uri: https://twitter.com/BetterDreamOrg
+how_to:
+    why: Pourquoi et comment ?
+    1:
+        title: Avoir de meilleurs rêves renforce votre santé
+        text: |
+            Le sommeil est un <strong>étape très importante</strong> dans le cycle de vie d'un individus.
+            En perdant conscience, vous laissez votre inconscient réparer une partie des erreurs que vous avez commises pendant la journée.
+            <br>
+            <br>
+            Vous devez probablement être surpris de lire que le sommeil corrige vos erreurs, mais prenez les exemples suivants:
+            <ul>
+                <li>
+                    Lorsque vous revivez une situation dans votre tête en vous disant que vous auriez dû dire
+                    autre chose, ou vous taire, ou agir differement, votre sommeil et vos rêves ont une chance de matérialiser
+                    ces scènes de les pseudo-vivre!
+                </li>
+                <li>
+                    <strong>La nuit porte conseil</strong> est une expression célèbre, qui prend tout son sens quand on sait que
+                    nous réfléchissons durant la nuit. Selon vos rêves, vous êtes remis en situation, et résolvez des problèmes
+                    souvent simple mais parfois complèxes!
+                </li>
+                <li>
+                    Lorsque vous rêvez votre sommeil est généralement moins susceptible de s'arreter brusquement en sursaut
+                    contrairement aux cauchemars. Avoir de meilleurs rêve vous permet donc de dormir plus longtemps.
+                </li>
+            </ul>
+            <br>
+
+            Il est donc nécéssaire pour l'être humain de profiter de son sommeil de la meilleures façon.<br>
+            L'étude et l'interprétation de vos rêves peut également vous aider à vous situer dans le présent
+            et comprendre votre état.
+
+    2:
+        title: Pourquoi et comment Better Dreams répond ces besoin ?
+        text: |
+            Better Dreams est une application mobile (android et iphone ios) qui utilise des ondes synthétisées galactiquement
+            depuis votre téléphone.
+            <br>
+            Nous avons trouvé un algorithme qui envoie vos idées dans l'éspace, et qui les récupère sous forme
+            d'ondes "magiques" qui vous forcent à rêver ce que vous avez décidez.
+            <br>
+            <a href="%url%">Téléchargez Better Dreams</a> pour avoir une meilleure vie et santé!

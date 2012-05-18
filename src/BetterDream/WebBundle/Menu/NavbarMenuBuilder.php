@@ -68,6 +68,8 @@ class NavbarMenuBuilder extends AbstractNavbarMenuBuilder
             $child->setExtra('safe_label', true);
         }
 
+        $menu->addChild($this->translator->trans('titles.how_to'), array('route' => 'betterdream_web_main_howto'));
+
         foreach ($menu->getChildren() as $child) {
             $child->setExtra('safe_label', true);
         }

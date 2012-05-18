@@ -49,4 +49,13 @@ class MainController extends Controller
     {
         return array();
     }
+
+    /**
+     * @Route("/how-to-have-better-dreams")
+     * @Template()
+     */
+    public function howToAction()
+    {
+        return array();
+    }
 }

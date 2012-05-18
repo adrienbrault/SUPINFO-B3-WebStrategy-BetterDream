@@ -5,9 +5,10 @@ titles:
     help: Help
     home: Home
     social: Social Networks
+    how_to: How to have better dreams
 home.title: The best iphone and android app to choose you dreams
 description: |
-    Better Dreams is a mobile application that let you <strong>choose the kind of dreams</strong> you'll have while sleeping.
+    Better Dreams is a mobile android and iphone application that let you <strong>choose the kind of dreams</strong> you'll have while sleeping.
 ios:
     link:
         uri: http://itunes.apple.com/us/app/angry-birds-space/id499511971?mt=8
@@ -87,3 +88,48 @@ about:
         Like all my project, this one will be open sourced on my github account once the deadline will be exceeded.
 facebook:
     locale: en_US
+how_to:
+    why: Why and how ?
+    1:
+        title: Avoir de meilleurs rêves renforce votre santé
+        text: |
+            Sleep is a <strong>very important</strong> step in the life of every human being.<br>
+            By losing awareness, you allow your subconscious to repair the mistakes you made during the day.
+            Theses mistakes were generally made unwillingly.
+            <br>
+            <br>
+            You must be astonished to read that your sleep fixes your mistakes, but read on the following examples to understand why:
+            <ul>
+                <li>
+                    When you relive a moment in your head, knowing that you should have said something else and
+                    trying to find what you should have said, your sleep and dreams have a chance to show you
+                    that you were close of success.
+                </li>
+                <li>
+                    <strong>It is best to sleep on it</strong> is a famous sentence, that demonstrates very well that
+                    dreams let us increase and fulfil our ideas! Having better dreams helps you solve harder
+                    problems at night, because you can choose to dream about mathematics instead of unicorns or cats!
+                </li>
+                <li>
+                    Have you ever been woken up suddently because of a bad nightmare ? Avoid nightmares, and
+                    have a better dreams instead, is a simple solution, trick, to help your sleep better.
+                </li>
+            </ul>
+            <br>
+
+            Sleeping better and having better dreams is a substantial help to your health.
+            <br>
+            How do you think these billionaires have found their successful ideas, and solve all their problems, while working
+            hard ? They've just dug in their dreams to solve problems, and also sometimes to forget everything during restful
+            nights.
+
+    2:
+        title: Why and how can Better Dreams solve these needs ?
+        text: |
+            Better Dreams is a mobile application that uses spaced engineered waves from your cell phone to
+            make you dream what you chose.
+            <br>
+            We found an algorithm that can send your ideas to space, and get them back as "magic" waves that forces you to
+            dream what you decided.
+            <br>
+            <a href="%url%">Download Better Dreams</a> to have a better life and health!
