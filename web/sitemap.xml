@@ -21,6 +21,10 @@
         <changefreq>daily</changefreq>
     </url>
     <url>
+        <loc>http://betterdream.org/comment-avoir-de-meilleurs-reves</loc>
+        <changefreq>daily</changefreq>
+    </url>
+    <url>
         <loc>http://betterdream.org/en/</loc>
         <changefreq>daily</changefreq>
     </url>
@@ -34,6 +38,10 @@
     </url>
     <url>
         <loc>http://betterdream.org/en/about</loc>
+        <changefreq>daily</changefreq>
+    </url>
+    <url>
+        <loc>http://betterdream.org/en/how-to-have-better-dreams</loc>
         <changefreq>daily</changefreq>
     </url>
 </urlset>
