@@ -29,6 +29,8 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="{{ url(app.request.attributes.get("_route") ) }}" />
     <meta property="og:image" content="{{ asset("bundles/betterdreamweb/img/icon.jpg") }}" />
+
+    <meta property="fb:admins" content="659664442" />
     {% endblock head_metas %}
 
     {% block head_script %}
@@ -88,7 +90,7 @@
                 <a href="https://twitter.com/share" data-lang="{{ app.request.locale }}" data-url="{{ home_url }}" class="twitter-share-button" data-via="BetterDreamOrg" data-related="BetterDreamOrg"></a>
             </div>
             <div>
-                <div class="fb-like" data-href="{{ home_url }}" data-send="false" data-layout="button_count" data-show-faces="false"></div>
+                <div class="fb-like" data-href="{{ home_url }}" data-send="false" data-layout="button_count" data-show-faces="false" data-width="450"></div>
             </div>
         </div>
         <p>&copy; <a href="{% trans %}uri.adrienbrault{% endtrans %}" target="_blank">Adrien Brault</a> 2012</p>
